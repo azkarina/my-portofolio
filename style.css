@@ -1,0 +1,156 @@
+body {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  color: #333;
+  margin: 0 10px;
+  border-radius: 25px;
+  padding: 6px 16px;
+}
+
+.nav-link.active, .nav-link:hover {
+  background-color: #cce3de;
+  color: #1b4332;
+}
+
+.hero {
+  background-color: #e9f5f2;
+  border-radius: 70px;
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.hero img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; 
+}
+
+.hero img:hover {
+  transform: scale(1.1); /* Membesarkan gambar saat di-hover */
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  color: #1b4332;
+}
+
+.hero-text p {
+  color: #4a4a4a;
+  margin-top: 10px;
+  max-width: 450px;
+}
+
+.btn-custom {
+  background-color: #1b4332;
+  color: #fff;
+  border-radius: 25px;
+  padding: 8px 24px;
+  margin-top: 20px;
+}
+
+.btn-custom:hover {
+  background-color: #163828;
+}
+
+h2 {
+  align-items: center;
+  margin-top: 0px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #f1f8f6;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover, .card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 30px;
+  color: #396a57;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #f1f8f6;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#contact {
+  background-color: #e9f5f2;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    margin-bottom: 20px;
+  }
+
+  .skill-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skill-card {
+    width: 100%;
+  }
+}
